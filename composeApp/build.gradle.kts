@@ -36,6 +36,8 @@ kotlin {
             implementation(libs.compose.ui)
             implementation(libs.compose.ui.tooling.preview)
             implementation(libs.androidx.activity.compose)
+            // Adding libs.androidx.core.ktx to be able to use CoroutineScope in CommonViewModel
+            implementation(libs.androidx.core.ktx)
         }
         desktopMain.dependencies {
             implementation(compose.desktop.currentOs)
@@ -44,7 +46,8 @@ kotlin {
             implementation(compose.runtime)
             implementation(compose.foundation)
             implementation(compose.material)
-            implementation(libs.orbit.compose)
+            // Orbit MVI - 3rd party library for sharing view models
+            implementation(libs.orbit.core)
             @OptIn(ExperimentalComposeLibrary::class)
             implementation(compose.components.resources)
         }

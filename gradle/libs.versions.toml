@@ -16,6 +16,8 @@ androidx-espresso-core = "3.5.1"
 kotlin = "1.9.20"
 junit = "4.13.2"
 orbit-mvi = "6.1.0"
+kotlin-coroutines = "1.7.3"
+core-ktx = "1.12.0"
 
 [libraries]
 kotlin-test = { module = "org.jetbrains.kotlin:kotlin-test", version.ref = "kotlin" }
@@ -33,7 +35,9 @@ androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version
 androidx-material = { group = "com.google.android.material", name = "material", version.ref = "androidx-material" }
 androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "androidx-constraintlayout" }
 androidx-activity-compose = { module = "androidx.activity:activity-compose", version.ref = "androidx-activityCompose" }
-orbit-compose = { group = "org.orbit-mvi", name = "orbit-compose", version.ref = "orbit-mvi"}
+orbit-core = { group = "org.orbit-mvi", name = "orbit-core", version.ref = "orbit-mvi"}
+core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "core-ktx"}
+
 
 [plugins]
 jetbrainsCompose = { id = "org.jetbrains.compose", version.ref = "compose-plugin" }
