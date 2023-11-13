@@ -1,14 +1,21 @@
 This is a Kotlin Multiplatform project targeting Android, iOS, Desktop.
 
-* `/composeApp` is for code that will be shared across your Compose Multiplatform applications.
-  It contains several subfolders:
-  - `commonMain` is for code that’s common for all targets.
-  - Other folders are for Kotlin code that will be compiled for only the platform indicated in the folder name.
-    For example, if you want to use Apple’s CoreCrypto for the iOS part of your Kotlin app,
-    `iosMain` would be the right folder for such calls.
 
-* `/iosApp` contains iOS applications. Even if you’re sharing your UI with Compose Multiplatform, 
-  you need this entry point for your iOS app. This is also where you should add SwiftUI code for your project.
+# StickyHabit App Concept
 
+## Purpose
+The **StickyHabit** app is designed to help users create a positive change in their lives by focusing on the modification and management of their habits. Drawing inspiration from the principles outlined in the book "Atomic Habits" by James Clear, this app aims to assist users in identifying, tracking, and transforming their habits over time.
 
-Learn more about [Kotlin Multiplatform](https://www.jetbrains.com/help/kotlin-multiplatform-dev/get-started.html)…
+## Functionality
+
+### Habit Listing
+- Users can list and categorize their habits into 'good' and 'bad' to gain clarity and awareness of their daily routines.
+
+### Habit Replacement
+- For every bad habit listed, the app encourages the user to specify a positive habit they wish to adopt in its place, facilitating a seamless transition.
+
+### Integration and Scheduling
+- Users can specify a time and place for each good habit, linking it to an existing routine, which helps in creating a structured habit formation process.
+
+### Progress Tracking
+- The app provides progress tracking for each habit, offering insights and motivational feedback to keep users engaged and informed about their personal growth.
