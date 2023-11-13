@@ -44,6 +44,7 @@ kotlin {
             implementation(compose.runtime)
             implementation(compose.foundation)
             implementation(compose.material)
+            implementation(libs.orbit.compose)
             @OptIn(ExperimentalComposeLibrary::class)
             implementation(compose.components.resources)
         }
