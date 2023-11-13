@@ -38,6 +38,7 @@ kotlin {
             implementation(libs.androidx.activity.compose)
             // Adding libs.androidx.core.ktx to be able to use CoroutineScope in CommonViewModel
             implementation(libs.androidx.core.ktx)
+
         }
         desktopMain.dependencies {
             implementation(compose.desktop.currentOs)
