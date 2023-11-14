@@ -35,8 +35,8 @@ androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version
 androidx-material = { group = "com.google.android.material", name = "material", version.ref = "androidx-material" }
 androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "androidx-constraintlayout" }
 androidx-activity-compose = { module = "androidx.activity:activity-compose", version.ref = "androidx-activityCompose" }
-orbit-core = { group = "org.orbit-mvi", name = "orbit-core", version.ref = "orbit-mvi"}
-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "core-ktx"}
+orbit-core = { group = "org.orbit-mvi", name = "orbit-core", version.ref = "orbit-mvi" }
+core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "core-ktx" }
 
 
 [plugins]
