@@ -14,10 +14,17 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import org.jetbrains.compose.resources.ExperimentalResourceApi
 import org.jetbrains.compose.resources.painterResource
+import presentation.view_model.home.HomeScreenEffect
+import presentation.view_model.home.HomeScreenIntents
+import presentation.view_model.home.HomeScreenState
 
 @OptIn(ExperimentalResourceApi::class)
 @Composable
-fun App() {
+fun App(
+    homeScreenState: HomeScreenState,
+    homeScreenEffect: HomeScreenEffect,
+    homeScreenIntents: HomeScreenIntents,
+) {
     MaterialTheme {
         var greetingText by remember { mutableStateOf("Hello World!") }
         var showImage by remember { mutableStateOf(false) }
