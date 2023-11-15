@@ -26,16 +26,16 @@ fun App(
     homeScreenIntents: HomeScreenIntents,
 ) {
     MaterialTheme {
-        var greetingText by remember { mutableStateOf("Hello World!") }
-        var showImage by remember { mutableStateOf(false) }
-        Column(Modifier.fillMaxWidth(), horizontalAlignment = Alignment.CenterHorizontally) {
+        Column(
+            modifier = Modifier.fillMaxWidth(),
+            horizontalAlignment = Alignment.CenterHorizontally
+        ) {
             Button(onClick = {
-                greetingText = "Compose: ${Greeting().greet()}"
-                showImage = !showImage
+                homeScreenIntents.onButtonClicked()
             }) {
-                Text(greetingText)
+                Text(homeScreenState.message)
             }
-            AnimatedVisibility(showImage) {
+            AnimatedVisibility(homeScreenState.isImageDisplayed){
                 Image(
                     painterResource("compose-multiplatform.xml"),
                     null

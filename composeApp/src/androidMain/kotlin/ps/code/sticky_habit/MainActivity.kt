@@ -36,7 +36,7 @@ class MainActivity : ComponentActivity() {
                 App(
                     homeScreenState = homeScreenState,
                     homeScreenEffect = homeScreenEffect,
-                    homeScreenIntents = this
+                    homeScreenIntents = this,
                 )
             }
         }
